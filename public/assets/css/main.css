@@ -1,0 +1,50 @@
+
+/* SIDEBAR */
+.sidebar {
+    background-color: #f8f9fa; /* light gray background */
+    min-height: 100vh; /* full height */
+    padding-top: 20px;
+}
+  
+.nav-link {
+    color: #333; /* dark text for readability */
+    margin: 5px 0; /* spacing between links */
+    padding-left: 20px; /* spacing from the left edge */
+    border-left: 3px solid transparent; /* add a transparent border for a hover effect later */
+    transition: all 0.3s; /* smooth transition for hover effects */
+}
+  
+.nav-link:hover,
+.nav-link.active {
+    color: #007bff; /* Bootstrap primary color on hover/active */
+    background-color: #e9ecef; /* light background on hover/active */
+    border-left-color: #007bff; /* Bootstrap primary color border on hover/active */
+}
+  
+  /* Font Awesome Icons in the sidebar */
+.fas {
+    margin-right: 10px; /* space between icon and text */
+}
+
+.top-bar {
+    background-color: #f8f9fa; /* Adjust the color to match your screenshot */
+    border-bottom: 1px solid #e1e4e8; /* Light border color, adjust as needed */
+    padding: 8px 20px; /* Adjust padding as needed */
+}
+.top-bar .search-bar {
+    width: 200px; /* Adjust width as needed */
+}
+.top-bar img {
+    border-radius: 50%; /* Circular image for the profile */
+    width: 32px; /* Adjust size as needed */
+    height: 32px; /* Adjust size as needed */
+}
+  
+  /* This media query is for demonstration and might need to be adjusted based on actual layout */
+@media (max-width: 768px) {
+    .sidebar {
+      min-height: auto;
+      padding-top: 0;
+    }
+}
+  
