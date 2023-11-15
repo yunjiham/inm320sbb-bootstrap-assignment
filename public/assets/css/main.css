@@ -64,10 +64,32 @@ main {
 
 .card {
     display: block;
+    padding: 2rem 0 1rem 0;
+    margin: 1rem;
+    color: #9FA2B4;
+    border: 2px solid #DFE0EB;
 }
+
+.card h2 {
+    color: #252733;
+}
+
+
+.card:hover {
+    border: 2px solid #3751FF;
+    transition: 0.2s ease-in-out;
+    color: #3751FF;
+}
+
+
+.card:hover h2{
+    color: #3751FF;
+    transition: 0.2s ease-in-out;
+}
+
   
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     .sidebar{
         width: 240px;
         /* flex: 0 0 240px; */
