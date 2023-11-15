@@ -31,7 +31,7 @@ body {
 .nav-link:hover,
 .nav-link.active {
     color: #DDE2FF;
-    background-color: 9FA2B4;
+    background-color: rgb(159, 162, 180, 0.08);
     border-left-color: #DDE2FF; 
 }
   
