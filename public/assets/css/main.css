@@ -89,13 +89,31 @@ main {
     color: #3751FF;
 }
 
-
 .card:hover h2{
     color: #3751FF;
     transition: 0.2s ease-in-out;
 }
 
-  
+.card.btm {
+   margin: 0;
+   padding: 0;
+}
+
+.card.btm h5 {
+    color: #252733;
+}
+
+.card.btm small {
+    color :#9FA2B4;
+}
+
+.card.btm small span {
+    color: #4B506D;
+}
+
+.card.btm:hover {
+    border: 2px solid #DFE0EB;
+}
 
 @media (min-width: 800px) {
     .sidebar{
