@@ -1,5 +1,171 @@
+/* Define variables for colors, sizes, etc. */
+$sidebar-background-color: #f8f9fa;
+$top-bar-background-color: $sidebar-background-color;
+$border-color: #e1e4e8;
+$text-color: #9FA2B4;
+$hover-border-color: #3751FF;
+$active-link-color: #DDE2FF;
+$link-hover-background-color: rgba(159, 162, 180, 0.08);
+$icon-width: 40px;
+$main-padding: 1rem;
+$card-border: 2px solid #DFE0EB;
+$card-hover-border: 2px solid $hover-border-color;
+$card-color: $text-color;
+$card-header-color: #252733;
 $font-family: 'Mulish', sans-serif;
 
+/* Base styles */
 body {
+    min-height: 100vh;
     font-family: $font-family;
+}
+
+/* Company styles */
+.company {
+    font-size: 19px;
+    color: #A4A6B3;
+}
+
+/* Logo container */
+.logo-container {
+    display: grid;
+    grid-template-columns: repeat(2);
+    gap: 10px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: $sidebar-background-color;
+    min-height: 100vh; 
+    padding-top: 20px;
+    overflow-y: auto;
+  
+    .nav-link {
+        color: white; 
+        margin: 5px 0;
+        padding-left: 20px;
+        border-left: 3px solid transparent;
+        transition: all 0.3s;
+    
+        &:hover, &.active {
+        color: $active-link-color;
+        background-color: $link-hover-background-color;
+        border-left-color: $active-link-color; 
+        }
+    }
+  
+    .icon {
+    width: $icon-width;
+    text-align: center;
+    }
+
+    .fas {
+    margin-right: 10px;
+    }
+}
+
+/* Top bar styles */
+.top-bar {
+    background-color: $top-bar-background-color; 
+    border-bottom: 1px solid $border-color; 
+    padding: 8px 20px; 
+  
+    .search-bar {
+        width: 200px;
+    }
+  
+    img {
+        border-radius: 50%; 
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* Main content */
+main {
+    flex-grow: 1;
+
+    .main-content {
+        padding: $main-padding;
+    }
+}
+
+/* Card styles */
+.card {
+    display: block;
+    padding: 2rem 0 1rem 0;
+    margin: 1rem;
+    color: $card-color;
+    border: $card-border;
+
+    h2 {
+        color: $card-header-color;
+    }
+
+    &:hover {
+        border: $card-hover-border;
+        transition: 0.2s ease-in-out;
+        color: $hover-border-color;
+    }
+
+    &:hover h2{
+        color: $hover-border-color;
+        transition: 0.2s ease-in-out;
+    }
+
+    &.btm {
+        margin: 0;
+        padding: 0;
+        
+        h5 {
+        color: $card-header-color;
+        }
+        
+        small {
+        color :$text-color;
+        
+        span {
+            color: #4B506D;
+        }
+        }
+        
+        &:hover {
+        border: $card-border;
+        }
+    }
+}
+
+/* Responsive styles */
+@media (min-width: 800px) {
+    .sidebar{
+        width: 240px;
+        position: fixed;
+    }
+    
+    .card {
+        display: block;
+    }
+
+    .row-cols-1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        flex: 1;
+        max-width: 100%;
+    }
+
+    .row-cols-1 .col {
+        max-width: 33.3333%;
+    }
+
+    .main-content {
+        margin-left: calc(3 * (100vw / 12));
+    }
+
+    .text-center {
+        justify-content: space-between;
+        align-items: center;
+    }
 }
