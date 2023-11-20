@@ -16,7 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css” />
     <link rel="stylesheet" href="assets/css/main.css">
-    
+
 </head>
 
 <body>
@@ -176,16 +176,20 @@
                 <!-- GRAPH -->
                 <section class="col bg-white border-end">
                     <h5 class="mt-2 col-9 w-100">
-                    Today's Trend
+                        Today's Trend
                     </h5>
 
                     <ul class="row ps-0 pt-3 d-flex " id="TableOfTrend">
                         <li class="col-8 mb-5 opacity-50 fs-6 ">as of 25 May 2019, 09:41 PM</li>
-                        <li class="col blockquote-footer d-flex  text-primary fs-6 "> &nbsp; <p class="text-dark opacity-50">Today</p></li>
-                        <li class="col blockquote-footer d-flex fs-6 opacity-50 "> &nbsp;<p class="text-dark">Yesterday</p></li>
+                        <li class="col blockquote-footer d-flex  text-primary fs-6 "> &nbsp; <p
+                                class="text-dark opacity-50">Today</p>
+                        </li>
+                        <li class="col blockquote-footer d-flex fs-6 opacity-50 "> &nbsp;<p class="text-dark">Yesterday
+                            </p>
+                        </li>
                     </ul>
-                    
-                    <img src="assets/img/full graph.png"   class="p-3 w-100 " alt="graph" >
+
+                    <img src="assets/img/full graph.png" class="p-3 w-100 " alt="graph">
                 </section>
 
                 <!--RIGHT SIDE-->
@@ -217,12 +221,12 @@
 
             </section>
 
-        
 
 
 
 
-            
+
+
 
 
             <!-- Tickets and tasks -->
@@ -230,12 +234,13 @@
                 <div class="row">
                     <!-- Unresolved Tickets -->
                     <div class="col-md-6">
-                        <div class="card">
+                        <div class="card btm">
                             <div class="card-header d-flex justify-content-between align-items-center">
                                 <h5 class="card-title mb-0">Unresolved tickets</h5>
                                 <a href="#" class="btn btn-link">View details</a>
                             </div>
                             <ul class="list-group list-group-flush">
+
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
                                     Waiting on Feature Request
                                     <span class="badge bg-primary rounded-pill">4238</span>
@@ -257,36 +262,45 @@
                     </div>
                     <!-- Tasks -->
                     <div class="col-md-6">
-                        <div class="card">
+                        <div class="card btm">
                             <div class="card-header d-flex justify-content-between align-items-center">
-                                <h5 class="card-title mb-0">Tasks</h5>
-                                <a href="#" class="btn btn-link">View all</a>
+                                <div>
+                                    <h5 class="card-title mb-0">Tasks</h5>
+                                    <small class="text-muted">Today</small>
+                                </div>
+                                <a href="#" class="btn btn-link text-decoration-none">View all</a>
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                    Finish ticket update
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>Create new task</span>
+                                        <button class="btn btn-outline-primary btn-sm">
+                                            <i class="bi bi-plus-lg"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <span>Finish ticket update</span>
                                     <button type="button" class="btn btn-warning btn-sm float-end">URGENT</button>
                                 </li>
                                 <li class="list-group-item">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     Create new ticket example
                                     <button type="button" class="btn btn-success btn-sm float-end">NEW</button>
                                 </li>
                                 <li class="list-group-item">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     Update ticket report
                                     <button type="button" class="btn btn-secondary btn-sm float-end">DEFAULT</button>
                                 </li>
                             </ul>
-                            <div class="card-footer text-end">
-                                <button type="button" class="btn btn-primary btn-circle btn-sm">
-                                    <i class="bi bi-plus"></i>
-                                </button>
-                            </div>
                         </div>
                     </div>
                 </div>
+
     </div>
     </section>
-
     </main>
     </div>
 

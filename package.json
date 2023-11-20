@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "lite-server --baseDir=\"public\""
+    "server": "lite-server --baseDir=\"public\"",
+    "watch": "scss --watch src/scss:[ublic/assets/css",
+    "start": "concurrently \"npm run watch\" \"npm run server\""
   },
   "author": "Yunji Ham",
   "license": "private",
