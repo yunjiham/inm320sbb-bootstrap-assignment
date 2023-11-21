@@ -91,11 +91,15 @@ main {
     }
 }
 
+.vr {
+    margin-right: 1rem;
+}
+
 /* Card styles */
 .card {
     display: block;
     padding: 2rem 0 1rem 0;
-    margin: 1rem;
+    margin: 0 1rem;
     color: $card-color;
     border: $card-border;
 
@@ -117,6 +121,7 @@ main {
     &.btm {
         margin: 0;
         padding: 0;
+        height: 100%;
         
         h5 {
         color: $card-header-color;
@@ -125,16 +130,30 @@ main {
         small {
         color :$text-color;
         
-        span {
-            color: #4B506D;
-        }
+            span {
+                color: #4B506D;
+            }
         }
         
         &:hover {
         border: $card-border;
         }
     }
+    &.graph {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
 }
+
+#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+// #TodayTrend {
+//     margin: 0.8rem;
+// }
 
 /* Responsive styles */
 @media (min-width: 768px) {

@@ -68,11 +68,15 @@ main .main-content {
   padding: 1rem;
 }
 
+.vr {
+  margin-right: 1rem;
+}
+
 /* Card styles */
 .card {
   display: block;
   padding: 2rem 0 1rem 0;
-  margin: 1rem;
+  margin: 0 1rem;
   color: #9FA2B4;
   border: 2px solid #DFE0EB;
 }
@@ -91,6 +95,7 @@ main .main-content {
 .card.btm {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 .card.btm h5 {
   color: #252733;
@@ -104,21 +109,20 @@ main .main-content {
 .card.btm:hover {
   border: 2px solid #DFE0EB;
 }
-
-#RightSide{
-  width: 100%;
-
+.card.graph {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
+#right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 /* Responsive styles */
 @media (min-width: 768px) {
-
-  #menu{
-    display: none;
-
-  }
-
   .sidebar {
     width: 250px;
     position: fixed;
@@ -153,22 +157,6 @@ main .main-content {
     justify-content: space-between;
     align-items: center;
   }
-
-  /*Graph*/
-  #TodayTrend{
-    flex-wrap: nowrap;
-      
-  }
-
-  #RightSide{
-    width: 38%;
-    
-  }
-
-
- 
-
- 
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -35,7 +35,7 @@
                 <div id="menu" class="dropdown">
                     <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-
+                        Menu
                     </button>
                     <ul class="dropdown-menu">
                         <li class="nav-item">
@@ -216,7 +216,7 @@
             </header>
 
             <!-- CARD -->
-            <section class="row g-4 py-5 row-cols-1 row-cols-lg-4">
+            <section class="row g-2 row-cols-1 row-cols-lg-4">
                 <article class="feature col card">
                     <figure class="text-center">
                         <figcaption>
@@ -254,59 +254,69 @@
                 </article>
             </section>
 
-
-            <!--Today's Trend-->
-            <section id="TodayTrend" class="row border d-flex flex-wrap">
-                <!-- GRAPH -->
-                <section class="col-8 bg-white border-end w-auto">
-                    <h5 class="mt-2 col-9 w-100">
-                        Today's Trend
-                    </h5>
-
-                    <ul class="row ps-0 pt-3 d-flex " id="TableOfTrend">
-                        <li class="col-8 mb-5 opacity-50 fs-6 ">as of 25 May 2019, 09:41 PM</li>
-                        <li class="col blockquote-footer d-flex  text-primary fs-6 "> &nbsp; <p
-                                class="text-dark opacity-50">Today</p>
-                        </li>
-                        <li class="col blockquote-footer d-flex fs-6 opacity-50 "> &nbsp;<p class="text-dark">Yesterday
-                            </p>
-                        </li>
-                    </ul>
-
-                    <img src="assets/img/full graph.png" class="p-3 w-100 " alt="graph">
-                </section>
-
-                <!--RIGHT SIDE-->
-                <section id="RightSide"
-                    class="col-4  align-items-xxl-stretch d-flex flex-column py-5 h-auto justify-content-center ">
-                    <ul class="text-center d-flex flex-column justify-content-center w-100">
-                        <li class="d-flex flex-column border-bottom py-3 w-100 pt-5 ">
-                            <h6 class="fw-light">Resolved</h6>
-                            <h4>449</h4>
-                        </li>
-                        <li class="d-flex flex-column border-bottom py-3 w-100 pt-5">
-                            <h6 class="fw-light">Received</h6>
-                            <h4>426</h4>
-                        </li>
-                        <li class="d-flex flex-column border-bottom py-3 w-100 pt-5">
-                            <h6 class="fw-light">Average first response time</h6>
-                            <h4>33m</h4>
-                        </li>
-                        <li class="d-flex flex-column border-bottom py-3 w-100 pt-5">
-                            <h6 class="fw-light">Average response time</h6>
-                            <h4>3h 8m</h4>
-                        </li>
-                        <li class="d-flex flex-column py-3 w-100 pt-5">
-                            <h6 class="fw-light">Resolution within SLA</h6>
-                            <h4>94%</h4>
-                        </li>
-                    </ul>
-
-                </section>
-
+            <!-- Today's Trend Section in One Card -->
+            <section class="container mt-4">
+                <div class="card graph">
+                    <div class="row g-0">
+                        <!-- Graph Column -->
+                        <div class="col-lg-8">
+                            <div class="card-body">
+                                <h5 class="card-title p-2">Today's trends</h5>
+                                <ul class="row p-2 d-flex " id="TableOfTrend">
+                                    <li class="col-8 mb-5 opacity-50 fs-6 text-secondary">as of 25 May 2019, 09:41 PM
+                                    </li>
+                                    <li class="col blockquote-footer d-flex  text-primary fs-6 "> &nbsp; <p
+                                            class="text-dark opacity-50">Today</p>
+                                    </li>
+                                    <li class="col blockquote-footer d-flex fs-6 opacity-50 "> &nbsp;<p
+                                            class="text-dark">Yesterday
+                                        </p>
+                                    </li>
+                                </ul>
+                                <img src="assets/img/full graph.png" alt="Today's Trends Graph" class="p-3 w-100 ">
+                            </div>
+                        </div>
+                        <!-- Right Side Column for Stats -->
+                        <div class="col-lg-4 border-start">
+                            <div class="card-body p-0">
+                                <ul id="right"
+                                    class="text-center d-flex flex-column align-items-xxl-stretch w-100 m-0 p-0">
+                                    <li class="d-flex flex-column py-3 w-100 pt-3 mt-5">
+                                        <div class="border-bottom w-100 pb-3 pt-3">
+                                            <h6 class="card-subtitle text-muted mb-2">Resolved</h6>
+                                            <h4>449</h4>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex flex-column py-3 w-100 pt-3">
+                                        <div class="border-bottom w-100 pb-3">
+                                            <h6 class="card-subtitle text-muted mb-2">Received</h6>
+                                            <h4>426</h4>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex flex-column py-3 w-100 pt-3">
+                                        <div class="border-bottom w-100 pb-3">
+                                            <h6 class="card-subtitle text-muted mb-2">Average first response time</h6>
+                                            <h4>33m</h4>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex flex-column py-3 w-100 pt-3">
+                                        <div class="border-bottom w-100 pb-3">
+                                            <h6 class="card-subtitle text-muted mb-2">Average response time</h6>
+                                            <h4>3h 8m</h4>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex flex-column py-3 w-100 pt-3">
+                                        <div class="w-100 pb-3">
+                                            <h6 class="card-subtitle text-muted mb-2">Resolution within SLA</h6>
+                                            <h4>94%</h4>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-
-
 
 
 
