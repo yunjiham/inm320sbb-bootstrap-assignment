@@ -34,6 +34,8 @@ body {
 }
 
 /* Sidebar styles */
+
+
 .sidebar {
     background-color: $sidebar-background-color;
     min-height: 100vh; 
@@ -54,11 +56,6 @@ body {
         }
     }
 
-    // .nav-text,
-    // .logo img,
-    // .company {
-    //     display: none;
-    // }
   
     .icon {
         width: $icon-width;
