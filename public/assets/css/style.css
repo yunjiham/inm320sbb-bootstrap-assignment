@@ -106,10 +106,19 @@ main .main-content {
 }
 
 /* Responsive styles */
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   .sidebar {
-    width: 240px;
+    width: 250px;
     position: fixed;
+  }
+  .sidebar .nav-link {
+    padding-left: 1rem;
+  }
+  .sidebar .nav-text, .sidebar .logo img, .sidebar .company {
+    display: block;
+  }
+  .sidebar .logo {
+    justify-content: start;
   }
   .card {
     display: block;

@@ -53,14 +53,20 @@ body {
         border-left-color: $active-link-color; 
         }
     }
+
+    // .nav-text,
+    // .logo img,
+    // .company {
+    //     display: none;
+    // }
   
     .icon {
-    width: $icon-width;
-    text-align: center;
+        width: $icon-width;
+        text-align: center;
     }
 
     .fas {
-    margin-right: 10px;
+        margin-right: 10px;
     }
 }
 
@@ -136,11 +142,24 @@ main {
 }
 
 /* Responsive styles */
-@media (min-width: 800px) {
+@media (min-width: 768px) {
     .sidebar{
-        width: 240px;
+        width: 250px;
         position: fixed;
+
+        .nav-link {
+            padding-left: 1rem;
+        }
+
+        .nav-text, .logo img, .company{
+            display: block;
+        }
+
+        .logo {
+            justify-content: start;
+        }
     }
+
     
     .card {
         display: block;
@@ -169,3 +188,4 @@ main {
         align-items: center;
     }
 }
+
