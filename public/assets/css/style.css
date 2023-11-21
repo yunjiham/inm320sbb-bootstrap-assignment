@@ -18,6 +18,7 @@ body {
   gap: 10px;
 }
 
+/* Dropdown */
 /* Sidebar styles */
 .sidebar {
   background-color: #f8f9fa;
@@ -76,7 +77,7 @@ main .main-content {
 .card {
   display: block;
   padding: 2rem 0 1rem 0;
-  margin: 0 1rem;
+  margin: 1rem;
   color: #9FA2B4;
   border: 2px solid #DFE0EB;
 }
@@ -138,6 +139,7 @@ main .main-content {
   }
   .card {
     display: block;
+    margin: 0 1rem;
   }
   .row-cols-1 {
     display: flex;

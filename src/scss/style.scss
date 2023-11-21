@@ -33,6 +33,11 @@ body {
     gap: 10px;
 }
 
+/* Dropdown */
+// .dropdown {
+//     margin-top: 1rem;
+// }
+
 /* Sidebar styles */
 .sidebar {
     background-color: $sidebar-background-color;
@@ -99,7 +104,7 @@ main {
 .card {
     display: block;
     padding: 2rem 0 1rem 0;
-    margin: 0 1rem;
+    margin: 1rem;
     color: $card-color;
     border: $card-border;
 
@@ -177,6 +182,7 @@ main {
     
     .card {
         display: block;
+        margin: 0 1rem;
     }
 
     .row-cols-1 {
