@@ -105,6 +105,12 @@ main .main-content {
   border: 2px solid #DFE0EB;
 }
 
+#RightSide{
+  width: 100%;
+
+}
+
+
 /* Responsive styles */
 @media (min-width: 768px) {
   .sidebar {
@@ -141,6 +147,21 @@ main .main-content {
     justify-content: space-between;
     align-items: center;
   }
+
+  /*Graph*/
+  #TodayTrend{
+    flex-wrap: nowrap;
+      
+  }
+
+  #RightSide{
+    width: 38%;
+    
+  }
+
+ 
+
+ 
 }
 
 /*# sourceMappingURL=style.css.map */
