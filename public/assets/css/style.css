@@ -113,6 +113,12 @@ main .main-content {
 
 /* Responsive styles */
 @media (min-width: 768px) {
+
+  #menu{
+    display: none;
+
+  }
+
   .sidebar {
     width: 250px;
     position: fixed;
@@ -158,6 +164,7 @@ main .main-content {
     width: 38%;
     
   }
+
 
  
 
