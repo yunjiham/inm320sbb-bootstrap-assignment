@@ -216,7 +216,7 @@
             </header>
 
             <!-- CARD -->
-            <section class="row g-2 row-cols-1 row-cols-lg-4">
+            <section class="row g-2 row-cols-1 row-cols-lg-2">
                 <article class="feature col card">
                     <figure class="text-center">
                         <figcaption>
@@ -260,7 +260,7 @@
                     <div class="row g-0">
                         <!-- Graph Column -->
                         <div class="col-lg-8">
-                            <div class="card-body">
+                            <div class="card-body" id="todayTrend">
                                 <h5 class="card-title p-2">Today's trends</h5>
                                 <ul class="row p-2 d-flex " id="TableOfTrend">
                                     <li class="col-8 mb-5 opacity-50 fs-6 text-secondary">as of 25 May 2019, 09:41 PM
@@ -281,7 +281,7 @@
                             <div class="card-body p-0">
                                 <ul id="right"
                                     class="text-center d-flex flex-column align-items-xxl-stretch w-100 m-0 p-0">
-                                    <li class="d-flex flex-column py-3 w-100 pt-3 mt-5">
+                                    <li class="d-flex flex-column py-3 w-100 pt-3 mt-3">
                                         <div class="border-bottom w-100 pb-3 pt-3">
                                             <h6 class="card-subtitle text-muted mb-2">Resolved</h6>
                                             <h4>449</h4>
@@ -319,18 +319,13 @@
             </section>
 
 
-
-
-
-
-
             <!-- Tickets and tasks -->
             <section class="container py-4">
-                <div class="row g-4 row-cols-lg-2 justify-content-between">
+                <div class="row g-4 row-cols-1 row-cols-lg-2 justify-content-between">
                     <!-- Unresolved Tickets -->
-                    <div class="col-12 col-lg-6">
-                        <div class="card btm mb-4">
-                            <div class="card-header d-flex justify-content-between align-items-center">
+                    <div class="col-12 col-lg-6 d-flex">
+                        <div class="card btm mb-4 flex-fill">
+                            <div class="card-header d-flex justify-content-between align-items-center p-3">
                                 <div>
                                     <h5 class="card-title mb-0">Unresolved tickets</h5>
                                     <small class="text-muted">Group: <span>Support</span></small>
@@ -339,19 +334,19 @@
                             </div>
                             <ul class="list-group list-group-flush">
 
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                                     Waiting on Feature Request
                                     <span class="badge bg-primary rounded-pill">4238</span>
                                 </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                                     Awaiting Customer Response
                                     <span class="badge bg-primary rounded-pill">1005</span>
                                 </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                                     Awaiting Developer Fix
                                     <span class="badge bg-primary rounded-pill">914</span>
                                 </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                                     Pending
                                     <span class="badge bg-primary rounded-pill">281</span>
                                 </li>
@@ -359,9 +354,9 @@
                         </div>
                     </div>
                     <!-- Tasks -->
-                    <div class="col-12 col-lg-6">
-                        <div class=" card btm">
-                            <div class="card-header d-flex justify-content-between align-items-center">
+                    <div class="col-12 col-lg-6 d-flex">
+                        <div class="card btm flex-fill">
+                            <div class="card-header d-flex justify-content-between align-items-center p-3">
                                 <div>
                                     <h5 class="card-title mb-0">Tasks</h5>
                                     <small class="text-muted">Today</small>
@@ -370,25 +365,25 @@
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                    <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex justify-content-between align-items-center p-1">
                                         <span>Create new task</span>
                                         <button class="btn btn-outline-primary btn-sm">
                                             <i class="bi bi-plus-lg"></i>
                                         </button>
                                     </div>
                                 </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <li class="list-group-item p-3">
+                                    <input class="form-check-input mx-2" type="checkbox" value="" id="flexCheckDefault">
                                     <span>Finish ticket update</span>
                                     <button type="button" class="btn btn-warning btn-sm float-end">URGENT</button>
                                 </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <li class="list-group-item p-3">
+                                    <input class="form-check-input mx-2" type="checkbox" value="" id="flexCheckDefault">
                                     Create new ticket example
                                     <button type="button" class="btn btn-success btn-sm float-end">NEW</button>
                                 </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <li class="list-group-item p-3">
+                                    <input class="form-check-input mx-2" type="checkbox" value="" id="flexCheckDefault">
                                     Update ticket report
                                     <button type="button" class="btn btn-secondary btn-sm float-end">DEFAULT</button>
                                 </li>

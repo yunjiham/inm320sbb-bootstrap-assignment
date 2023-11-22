@@ -18,7 +18,6 @@ body {
   gap: 10px;
 }
 
-/* Dropdown */
 /* Sidebar styles */
 .sidebar {
   background-color: #f8f9fa;
@@ -98,6 +97,9 @@ main .main-content {
   padding: 0;
   height: 100%;
 }
+.card.btm .card-header {
+  background-color: white;
+}
 .card.btm h5 {
   color: #252733;
 }
@@ -114,6 +116,13 @@ main .main-content {
   margin: 0;
   padding: 0;
   height: 100%;
+}
+
+#todayTrend .card-title {
+  color: #252733;
+}
+#todayTrend .card-title:hover {
+  color: #252733;
 }
 
 #right {
@@ -148,9 +157,6 @@ main .main-content {
   .col {
     flex: 1;
     max-width: 100%;
-  }
-  .row-cols-1 .col {
-    max-width: 33.3333%;
   }
   .main-content {
     margin-left: 25vw;

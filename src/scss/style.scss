@@ -33,11 +33,6 @@ body {
     gap: 10px;
 }
 
-/* Dropdown */
-// .dropdown {
-//     margin-top: 1rem;
-// }
-
 /* Sidebar styles */
 .sidebar {
     background-color: $sidebar-background-color;
@@ -127,13 +122,17 @@ main {
         margin: 0;
         padding: 0;
         height: 100%;
+
+        .card-header {
+            background-color: white;
+        }
         
         h5 {
-        color: $card-header-color;
+            color: $card-header-color;
         }
         
         small {
-        color :$text-color;
+            color :$text-color;
         
             span {
                 color: #4B506D;
@@ -141,7 +140,7 @@ main {
         }
         
         &:hover {
-        border: $card-border;
+            border: $card-border;
         }
     }
     &.graph {
@@ -151,14 +150,25 @@ main {
     }
 }
 
+#todayTrend {
+    .card-title {
+    color: $card-header-color; // This sets the color to black
+
+    &:hover {
+        color: $card-header-color; // This ensures the color remains black on hover
+    }
+    }
+}
+  
+
 #right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-// #TodayTrend {
-//     margin: 0.8rem;
-// }
+
+
+
 
 /* Responsive styles */
 @media (min-width: 768px) {
@@ -195,9 +205,6 @@ main {
         max-width: 100%;
     }
 
-    .row-cols-1 .col {
-        max-width: 33.3333%;
-    }
 
     .main-content {
         margin-left: calc(3 * (100vw / 12));
